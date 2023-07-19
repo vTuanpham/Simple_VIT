@@ -18,7 +18,7 @@ from src.utils.util_funcs import timeit, plot_image, TwoWayDict
 
 
 CLASSES = TwoWayDict({"airplane": 0, "automobile": 1, "bird": 2, "cat": 3, "deer": 4,
-                      "dog": 5, "frog": 6, "horse": 7, "ship": 8, "truck": 9}).dict
+                      "dog": 5, "frog": 6, "horse": 7, "ship": 8, "truck": 9})
 
 
 class CIFAR(Dataset):

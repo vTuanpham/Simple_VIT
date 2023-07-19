@@ -70,6 +70,8 @@ def plot_image(tensor, label: str=None):
 
 
 class TwoWayDict:
-    def __init__(self, dict):
-        self.dict = dict
-        self.dict.update({item[1]: item[0] for item in  self.dict.items()})
+    def __new__(cls, dict):
+        cls.dict = dict
+        cls.dict.update({item[1]: item[0] for item in  cls.dict.items()})
+
+        return cls.dict
